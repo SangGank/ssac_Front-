@@ -360,3 +360,22 @@ https://www.w3schools.com/cssref/pr_class_display.asp
 >
 > - .list-item:first-child(첫번째 요소 선택)
 > - .list-item:last-child(마지막 요소 선택)
+
+### Github 용어 정리
+
+> repository : 저장소
+>
+> - local respository
+> - remote repository
+>
+> clone : 복제
+>
+> - remote repository를 local repository로 복제
+>
+> staging : commit할 파일을 선택하는 것 (<-> unstaging)
+> commit : staging된 파일의 업데이트를 Fix(확정)하는 것
+> push: commit된 snapshot을 remote repository에 업로드(업데이트) 하는 것
+>
+> pull : remote repository의 상태를 다운로드하여 local repository의 상태를 업데이트 하는 것(fetch + merge)
+> fetch : remote repository의 상태를 가져오기만 하는 것
+> merge : 가져온 업데이트된 상태들을 하나로 합치는 것
