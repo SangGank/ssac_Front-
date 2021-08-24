@@ -3,6 +3,8 @@
    License: none (public domain)
 */
 
+/* reset css */
+
 html,
 body,
 div,
@@ -127,13 +129,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/*
-font-family: 'Montserrat', sans-serif;
-font-family: 'Nunito Sans', sans-serif;
-font-family: 'NanumSquare', sans-serif;
-*/
 
-/*page css*/
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Nunito Sans', sans-serif; */
+/* font-family: 'NanumSquare', sans-serif; */
+
+/* page css */
 
 .header {
   height: 100px;
@@ -141,15 +142,19 @@ font-family: 'NanumSquare', sans-serif;
   justify-content: space-between;
   padding: 0px 100px;
 }
+
 .logo {
   margin-top: 38px;
 }
+
 .gnb {
   margin-top: 45px;
 }
+
 .gnb-list {
   display: flex;
 }
+
 .gnb-list-item {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -161,10 +166,9 @@ font-family: 'NanumSquare', sans-serif;
   text-decoration: none;
 }
 .gnb-list-link:hover {
-  color: #10c9c3;
-}
-.gnb-list-link:active {
-  color: red;
+  color: rgb(16, 201, 195);
+  /* a : 투명도(0.0 ~ 1.0) */
+  color: rgba(16, 201, 195, 0.6);
 }
 .section01 {
   height: 315px;
@@ -180,17 +184,35 @@ font-family: 'NanumSquare', sans-serif;
   color: #191919;
   margin-bottom: 35px;
 }
-.paragragh {
+.paragraph {
   font-family: "NanumSquare", sans-serif;
   font-size: 16px;
   color: #191919;
   line-height: 1.6;
   font-style: italic;
 }
+
+.more-link {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  border: 1px solid red;
+  line-height: 40px;
+  text-decoration: none;
+  color: #191919;
+  margin-top: 20px;
+}
+
+.more-link:hover {
+  background: red;
+  color: #fff;
+}
+
 .group {
   display: flex;
   justify-content: center;
 }
+
 .figure {
   width: 340px;
   height: 300px;
@@ -199,13 +221,12 @@ font-family: 'NanumSquare', sans-serif;
 
 .figure-image {
   height: 300px;
-  width: 340px;
 }
 
 .figure-video {
   height: 300px;
-  width: 340px;
 }
+
 .footer {
   height: 280px;
   background-color: #141414;
@@ -213,10 +234,11 @@ font-family: 'NanumSquare', sans-serif;
   display: flex;
   justify-content: space-between;
   padding: 100px 100px 0px;
-  box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
   font-size: 15px;
+  box-sizing: border-box;
 }
+
 .copyright-company {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -241,11 +263,10 @@ font-family: 'NanumSquare', sans-serif;
     height: auto;
     flex-direction: column;
     padding: 0 0 10px 0;
-    justify-content: center;
   }
   .logo {
-    margin-top: 0;
-    /* 인라인 요소에 text-align을 적용 가능 */
+    margin-top: 10px;
+    /* 인라인 요소에 tet-align을 적용 가능 */
     text-align: center;
   }
   .gnb {
@@ -257,21 +278,23 @@ font-family: 'NanumSquare', sans-serif;
   .gnb-list-item:first-child {
     margin-left: 0;
   }
+
   .section-heading {
     font-size: 24px;
   }
-  .paragragh {
+
+  .paragraph {
     padding: 0 25px;
-    justify-content: center;
   }
-  .paragragh br {
+
+  .paragraph br {
     display: none;
   }
+
   .group {
     flex-direction: column;
-    justify-content: center;
   }
   .figure {
-    margin: 0 auto;
+    margin: 10px auto;
   }
 }
